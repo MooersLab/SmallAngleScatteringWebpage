@@ -572,23 +572,21 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 <hr style="border:3px solid #4F1315">
 <p></p><h2> <a name="SAXS TextBooks"></a>SAXS Textbooks</h2><p></p>
 
-<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.amazon.com/Small-Angle-X-Ray-Scattering-Applications-Structural/dp/0470494190/ref=sr_1_3?s=books&ie=UTF8&qid=1362061202&sr=1-3&keywords=Small-angle+scattering+X-rays"> Lipfert and Donaich </a> (coming August 31, 2015 ) Small-Angle X-Ray Scattering: Applications to Structural Molecular Biology. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href=" "> Lattman, Grant, and Snell (2018). </a> Biological Small Angle Scattering: Theory and Practice. IUCr Book Series/Oxford Science Publications</p>
 
-<p style="margin-left:.9in;text-indent:-.6in"><a href=" "> Lattman, Grant, and Snell (2018) Biological Small Angle Scattering: Theory and Practice. IUCr Book Series/Oxford Science Publications</a>
-</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="https://www.amazon.com/Biological-Small-Angle-Scattering-Experimental/dp/9811060371"> Chaudhuri, Munoz, Qian, and Urban (2017). </a> Biological Small Angle Scattering: Techniques, Strategies and Tips, Springer</p>
 
-<p style="margin-left:.9in;text-indent:-.6in"><a href="https://www.amazon.com/Biological-Small-Angle-Scattering-Experimental/dp/9811060371"> 
-Chaudhuri, Munoz, Qian, and Urban (2017) Biological Small Angle Scattering: Techniques, Strategies and Tips, Springer<
-/a>
-</p>
-
-<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.amazon.com/gp/product/0199639531/ref=ox_sc_act_title_7?ie=UTF8&psc=1&smid=ATVPDKIKX0DER"> Svergun, D. I., Koch, M. H. J., Timmins, P.A., and May, R. P. (Nov. 1, 2013) Small Angle X-Ray and Neutron Scattering from Solutions of Biological Macromolecules</a> (International Union of Crystallography Texts on Crystallography). Oxford University Press.  Parts can be viewed on-line at Amazon.con </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.amazon.com/gp/product/0199639531/ref=ox_sc_act_title_7?ie=UTF8&psc=1&smid=ATVPDKIKX0DER"> Svergun, D. I., Koch, M. H. J., Timmins, P.A., and May, R. P. (Nov. 1, 2013).</a> Small Angle X-Ray and Neutron Scattering from Solutions of Biological Macromolecules</a> (International Union of Crystallography Texts on Crystallography). Oxford University Press.  Parts can be viewed on-line at Amazon.con </p>
 
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/biosaxs/reprints/feigin_svergun_1987.pdf"> Feigin, L.A. and Svergun, D.I. (1987)</a>. Structure Analysis by Small-Angle X-Ray and Neutron Scattering. New York: Plenum Press. p. 40. ISBN 0-306-42629-3. Download here </p>
 
-<p style="margin-left:.9in;text-indent:-.6in"><a href="http://physchem.kfunigraz.ac.at/sm/Software.htm">Glatter, Otto and Kratky, Otto (eds.)</a>: Small Angle X-ray Scattering. London: Academic Press (1982). Out of print but can download by clicking on authors's names. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://physchem.kfunigraz.ac.at/sm/Software.htm">Glatter, Otto and Kratky, Otto (eds.) (1982).</a>: Small Angle X-ray Scattering. London: Academic Press. Out of print but can download by clicking on authors's names. </p>
 
-<p style="margin-left:.9in;text-indent:-.6in"><a href="http://http//www.amazon.com/Small-angle-scattering-X-rays-Structure-matter/dp/B0007E66B6/ref=sr_1_2?s=books&ie=UTF8&qid=1362061202&sr=1-2&keywords=Small-angle+scattering+X-rays"> Guinier, A.  and  Fournet, G. </a><a>: Small-angle scattering of x-rays. New York: John Wiley &amp; Sons (1955) </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://http//www.amazon.com/Small-angle-scattering-X-rays-Structure-matter/dp/B0007E66B6/ref=sr_1_2?s=books&ie=UTF8&qid=1362061202&sr=1-2&keywords=Small-angle+scattering+X-rays"> Guinier, A.  and  Fournet, G. (1955)</a>: Small-angle scattering of x-rays. New York: John Wiley and Sons. </a></p>
+
+___
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.amazon.com/Small-Angle-X-Ray-Scattering-Applications-Structural/dp/0470494190/ref=sr_1_3?s=books&ie=UTF8&qid=1362061202&sr=1-3&keywords=Small-angle+scattering+X-rays"> Lipfert and Donaich (coming some year)</a> Small-Angle X-Ray Scattering: Applications to Structural Molecular Biology.</p>
 
 <p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
 <hr style="border:3px solid #4F1315">

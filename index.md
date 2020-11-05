@@ -260,7 +260,7 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://neutrons.ornl.gov/biosans/">ORNL, Oak Ridge National Lab, </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.indiana.edu/~lens/">LENS, Low Energy Neutron Source, Indiana U. </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.nist.gov/ncnr/ng3-sans-small-angle-neutron-scattering.cfm"> NIST, Center for Neutron Research</a></p>
-<p style="margin-left:.9in;text-indent:-.6in"><a href="http://lansce.lanl.gov/lujan/instruments/LQD.shtml">Lujan Neutron Scattering Center at LANSCE, Los Alamos National Laboratory, Low-Q Diffractometer, 0.003 to 0.5 Ã-1 </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://lansce.lanl.gov/lujan/instruments/LQD.shtml">Lujan Neutron Scattering Center at LANSCE, Los Alamos National Laboratory, Low-Q Diffractometer, 0.003 to 0.5 Å^{-1} </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://jins.tennessee.edu/epscor/index.html"> EPSCOR Neutron Scattering Network</a></p><a href="http://jins.tennessee.edu/epscor/index.html">
 
 <br> 
@@ -299,7 +299,7 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 <hr style="border:3px solid #4F1315">
 
 <p></p><h2> <a name="SAXS Databases"></a>SAXS Databases:</h2><p></p>
-<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dara.embl-hamburg.de/"> DARA, DAtabase for RApid search of structural neighbours for proteins based on their Xâray smallâangle scattering patterns. DaRa is built from ~24,000 PDB structures with sequence homology of less than 90%. DaRa takes experimental data processed by Gnom as input. The molecular weight of the protein is used to filter the search pool. Sokolova et al. (2003) Prototype of a database for rapid protein classification based on solution scattering data. J. Appl. Cryst. 36, 865-868 </a></p><a href="http://dara.embl-hamburg.de/">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dara.embl-hamburg.de/"> DARA, DAtabase for RApid search of structural neighbours for proteins based on their X - ray small - angle scattering patterns. DaRa is built from ~24,000 PDB structures with sequence homology of less than 90%. DaRa takes experimental data processed by Gnom as input. The molecular weight of the protein is used to filter the search pool. Sokolova et al. (2003) Prototype of a database for rapid protein classification based on solution scattering data. J. Appl. Cryst. 36, 865-868 </a></p><a href="http://dara.embl-hamburg.de/">
 </a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://dara.embl-hamburg.de/"></a><a href="http://www.bioisis.net/">BIOISIS, Integrated Structures in Solution Databank; the "Protein Data Bank" of SAXS;  can download saxs data and use as tutorials </a><br>
 </p><p style="margin-left:.9in;text-indent:-.6in">Citing BIOISIS:   Rambo, R. (2009). BIOISIS, http://www.bioisis.net/. </p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>

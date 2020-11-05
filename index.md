@@ -24,7 +24,7 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 
 <a href="http://www.helsinki.fi/~serimaa/xray-luento/luento-SAXSdata-analysis.pdf"> another such guide from Finland</a>
 
-<a href="http://www.bruker.com/fileadmin/user_upload/8-PDF-Docs/X-rayDiffraction_ElementalAnalysis/SC-XRD/Webinars/Bruker_AXS_Overview_of_Biological_SAXS_Webinar_20120614.pdf%20Overview%20of%20Biological%20SAXS,%20Bruker-AXS%20%3C/a%3E%3C/p%3E%3Cbr%3E%3Chr/%20style=" border:3px="" solid="" #4f1315"=""> Bruker BioSASXS Overview </a>
+<a href="http://www.bruker.com/fileadmin/user_upload/8-PDF-Docs/X-rayDiffraction_ElementalAnalysis/SC-XRD/Webinars/Bruker_AXS_Overview_of_Biological_SAXS_Webinar_20120614.pdf%20Overview%20of%20Biological%20SAXS,%20Bruker-AXS%20%3C/a%3E%3C/p%3E%3Cbr%3E%3Chr/%20style="> Bruker BioSASXS Overview </a>
 
 ***
 
@@ -58,10 +58,10 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 <p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS fee for service"> SAXS fee for service </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Instruments">SAXS Instruments  </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Meetings">SAS Meetings  </a></p>
-<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: Chimera">SAXS and Molecular GraphicsChimera</a></p>
-<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: PyMOL">SAXS and Molecular GraphicsPyMOL</a></p>
-<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: SITUS">SAXS and Molecular GraphicsSITUS</a></p>
-<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: VMD">SAXS and Molecular GraphicsVMD</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: Chimera">SAXS and Molecular Graphics - Chimera</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: PyMOL">SAXS and Molecular Graphics - PyMOL</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: SITUS">SAXS and Molecular Graphics - SITUS</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular Graphics: VMD">SAXS and Molecular Graphics - VMD</a></p>
 <p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Software">SAXS Software </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Software Developer Groups">SAXS Software Developer Groups  </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Reviews">SAXS Reviews </a></p>

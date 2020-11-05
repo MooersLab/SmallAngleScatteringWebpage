@@ -1,0 +1,634 @@
+---
+title: "Biomolecular Small Angle Scattering Links"
+author: "Blaine Mooers"
+date: "July 22, 2018"
+output: html_document
+---
+- SAXS: Small Angle X-ray Scattering   
+- SANS: Small Angle Neutron Scattering
+- MAXS: Medium Angle X-ray Scattering
+- MANS: Medium Angle Neutron Scattering
+- WAXS: Wide Angle X-ray Scattering  
+- SWAXS: Small Angle/Wide Angle X-ray Scattering Combined    
+- SMWAXS: Small Angle/Medium Angle/Wide Angle X-ray Scattering Combined
+
+* * *
+
+Still a work in progress. Please report dead links, corrections, and suggested additions to blaine-mooers at ouhsc.edu.
+
+<hr style="border:3px solid #4F1315">
+
+###Quick introductions to biological SAXS
+
+<a href="http://www.macchess.cornell.edu/MacCHESS/biosaxs_whatis.html"> A "Need-to-Know Quick Start Guide"</a> from the Biological Small-Angle X-Ray Solution Scattering (BioSAXS) at MacCHESS </a>
+
+<a href="http://www.helsinki.fi/~serimaa/xray-luento/luento-SAXSdata-analysis.pdf"> another such guide from Finland</a>
+
+<a href="http://www.bruker.com/fileadmin/user_upload/8-PDF-Docs/X-rayDiffraction_ElementalAnalysis/SC-XRD/Webinars/Bruker_AXS_Overview_of_Biological_SAXS_Webinar_20120614.pdf%20Overview%20of%20Biological%20SAXS,%20Bruker-AXS%20%3C/a%3E%3C/p%3E%3Cbr%3E%3Chr/%20style=" border:3px="" solid="" #4f1315"=""> Bruker BioSASXS Overview </a>
+
+* * *
+
+<a name="FASTLINKS"/>
+
+##Link Indices 
+(click on topic to navigate webpage) 
+
+
+<p style="margin-left:.9in;text-indent:-.6in" "=""> <a href="#Advantages of Access to a Local Instrument">Advantages of Access to a Local SAXS Instrument</a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in" "=""> <a href="#Historical Milestones in SAXS"> Historical Milestones in SAXS</a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in" "=""> <a href="#Conditions For Ensembles">Conditions that justify modeling SAXS data with an ensemble</a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#Conditions For Ensembles"> </a><a href="#Miscellaneous Links"> Miscellaneous Links</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SANS beam lines">SANS beam lines </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS beam lines">SAXS beam lines </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS beam lines, mail in-services">SAXS beam lines, mail in-services </a></p>
+
+
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Databases">SAXS Databases  </a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SANS Examples">SANS Examples </a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Examples by Experiment Type">SAXS Examples by Experiment Type</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Examples by Disease">SAXS Examples by Disease</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Examples by Macromolecule">SAXS Examples by Macromolecule Type</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#WAXS Examples">WAXS Examples  </a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS fee for service"> SAXS fee for service </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Instruments">SAXS Instruments  </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Meetings">SAS Meetings  </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular GraphicsâChimera">SAXS and Molecular GraphicsChimera</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular GraphicsâPyMOL">SAXS and Molecular GraphicsPyMOL</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular GraphicsâSITUS">SAXS and Molecular GraphicsSITUS</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS and Molecular GraphicsâVMD">SAXS and Molecular GraphicsVMD</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Software">SAXS Software </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Software Developer Groups">SAXS Software Developer Groups  </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Reviews">SAXS Reviews </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Seminars, local">SAXS Seminars, Local </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS TextBooks">SAXS TextBooks </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Tutorials">SAXS Tutorials </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SANS Workshops">SANS Workshops</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#SAXS Workshops">SAXS Workshops</a></p>
+
+<hr style="border:3px solid #4F1315">
+<h1 align="center"> <a name="Summary Points about Biological SAXS"></a> Summary Points about Biological SAXS</h1>
+<ol>
+<li>SAXS is a low-resolution structure determination method that does not require crystals and works with proteins that might be difficult to crystallize (e.g., containing disordered domains).</li>
+<li>SAXS yields a molecular envelope that gives that global shape of the molecule at low resolution (12-20 Å). This low resolution shape is sufficient to answer many biological quesitons.</li>
+<li>The maximum distance (Dmax) has an experimental error of about 2% or 2.7 Å. Changes in shape smaller than this error will be difficult to detect.</li>
+<li>SAXS enables the study of biological macromolecules in a variety of solution conditions ranging from near physiological to highly denaturing.</li>
+<li>Ab initio structure reconstruction methods enable the making a 3-D molecular envelopes from 1-D scattering data.</li>
+<li>The modeling of protein:protein and protein:nucleic acid complexes is a valuable application of SAXS. High resolution structures of individual components can be placed inside the SAXS molecular envelope by rigid body fitting.</li>
+<li>SANS facilitates the study of complexes with one or more deuterated components by contrast variation.</li>
+<li>Mobile surface loops and domains that move too much to be seen in crystal structures can be visualized by SAXS.</li>
+<li>Ensembles of partly or fully unfolded proteins or RNAs can be studied by SAXS.</li>
+<li>The size range for biological SAXS to 5 KDa to 50 MDa.</li>
+<li>The samples must be aggregate-free (check with dynamic light scattering). The samples should also be free of interparticle effects. </li>
+<li>To test for interparticle interactions, scattering data are typically collected at three or four concentrations ranging from 1 to 10 mg/ml. The sample volume per measurement is 30 microliters. Data are collected from a matching buffer sample that should be obtained by dialysis. The interparticle interactions can be weakened by increasing the buffer concentration.</li>
+<li>Avoid inorganic buffers like phosphate and cacodylate. Use MOPS, MES, or TRIS which scavenge free radicals generated by X-ray damage. 1-5 mM DTT, TCEP, and 2-mercaptoethanol also protect proteins from excessive radiation damage. So does glycerol but you must have a matching concentration in your buffer sample. 12. Take care with detergents. Some detergents scatter X-rays very strongly. </li>
+<li>Methods of working membrane proteins using SAXS are summarized on pages 313-317 of the following review: <a href="http://dx.doi.org/10.1146/annurev.biophys.36.040306.132655">Lipfert, J. and Doniach, S. (2007)</a> Small-angle X-ray scattering from RNA, proteins, and protein complexes. Annu. Rev. Biophys. Biomol. Struct. 36, 307-27.</li>
+<li>Membrance proteins embedded in nanodics can be studied by SAXS and SANS.</li>
+<li>NMR and SAXS complement each other to give detailed structures with accurate global shapes.</li>
+<li>Milligram quantities of very pure material are required.</li>
+<li>Size Exclusion Chromatography (SEC)-SAXS does not work well with impure samples.</li>
+</ol>
+
+[Back to quick links at the top](#FASTLINKS)
+
+* * *
+
+<h1 align="center"> <a name="Advantages of Access to a Local Instrument"></a> Advantages of Access to a Local Instrument</h1>
+1. Many samples are stable only for a one week or two after purification. Scheduled time at a beam line has to be arranged a minimum of two weeks in advance for a rapid access program and several months for regular programs.</p>
+2. Many samples are to hard transport without freezing. Many samples lack freezing protocols. </p>
+3. Many samples need the solution conditions optimized to eliminate aggregation or interparticle effects. There is not much time during a trip to a beam line to optimize solution conditions. 
+4. Interparticle effects are hard to detect by other methods. 
+<br>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h1 align="center"> <a name="Historical Milestones in SAXS"></a> Historical Milestones in SAXS from <a href="http://dx.doi.org/10.1146/annurev-biophys-083012-130301">Rambo and Tainer (2013)  </a></h1>
+
+
+<table border="2" cellpadding="10" align="center">
+<tbody><tr>
+<th>Year</th>
+<th>Event</th>
+<th>Reference</th>
+</tr>
+
+<tr>
+<td>1915</td>
+<td>Debye equation</td>
+<td>nnn</td>
+</tr>
+
+<tr>
+<td>1939</td>
+<td>Guinier approximation equation</td>
+<td><cc td="">
+</cc></td></tr>
+
+<tr>
+<td>1949</td>
+<td>Scattering equation </td>
+<td><a href="http://dx.doi.org/10.1063/1.1698419"> Debye and Bueche </a></td>
+</tr>
+
+<tr>
+<td>1951-1957</td>
+<td>Porod, Debye, Kratky</td>
+<td></td>
+</tr>
+
+<tr>
+<td>1964</td>
+<td>SAS model tRNA</td>
+<td><a href="http://www.ncbi.nlm.nih.gov/pubmed/13921277">Timashef 1961  </a>;<a href="http://dx.doi.org10.1016/j.biochi.2003.09.018"> Witz, 2003</a></td>
+</tr>
+
+
+<tr>
+<td>1970</td>
+<td>Contrast variations, Multipole expansion</td>
+<td><a href="http://dx.doi.org/10.1107/S0567739470000748">Stuhrmann</a></td>
+</tr>
+
+<tr>
+<td>1970s</td>
+<td>Synchrotron SAXSn</td>
+<td></td>
+</tr>
+
+<tr>
+<td>1977</td>
+<td>Indirect Fourier Transformation</td>
+<td><a href="http://dx.doi.org/10.1107/S0021889877013879">Glatter </a></td>
+</tr>
+
+<tr>
+<td>1980</td>
+<td>Information Theory Applied to SAXS</td>
+<td><a href="http://dx.doi.org/10.1107/S002188988001179x">Moore 2000</a></td>
+</tr>
+
+<tr>
+<td>1987</td>
+<td>30S SAS model</td>
+<td></td>
+</tr>
+
+<tr>
+<td>1992</td>
+<td>GNOM, the application of the Tikhovnov regularization to the inverse problem</td>
+<td> <a href="http://dx.doi.org/10.1107/s0021889892001663">Svergun </a> </td>
+</tr>
+
+<tr>
+<td>1995</td>
+<td>CRYSOL</td>
+<td><a href="http://dx.doi.org/10.1107/s0021889892001663">Svergun et al. </a></td>
+</tr>
+
+<tr>
+<td>1998-2000</td>
+<td>ab initio methods:<ul> <li>DaliGA</li><li>DAMMIN</li> <li>SAXS3D</li> <li>GASBOR</li></ul></td>
+<td><ul><li><a href="http://dx.doi.org/10.1016/S0006-3495(98)77984-6">Chacon et al. 1998</a>; <a href="http://dx.doi.org/10.1006/jmbi.2000.3784">Chacon et al. 2000</a></li>
+<li><a href="http://dx.doi.org/10.1016/S0006-3495(99)77443-6">Svergun </a></li>
+<li>--</li> 
+<li><a href="http://dx.doi.org/10.1016/S0006-3495(01)76260-1">Svergun et al. 2001</a></li> </ul> 
+</td>
+</tr>
+
+<tr>
+<td>2007</td>
+<td>Ensemble methods: <ul><li>EOM</li><li>MES</li><li>BSS-SAXS</li><li>EROS</li></ul></td>
+<td><ul>
+<li><a href="http://dx.doi.org/10.1021/ja069124n">  EOM, Bernado et al. 2007</a></li><a href="http://dx.doi.org/10.1021/ja069124n">
+</a><li><a href="http://dx.doi.org/10.1021/ja069124n"> </a><a href="http://dx.doi.org/10.4149/gpb_2009_02_174">  MES, Pelikan et al. 2009</a></li><a href="http://dx.doi.org/10.4149/gpb_2009_02_174">
+</a><li><a href="http://dx.doi.org/10.4149/gpb_2009_02_174"> </a><a href="http://dx.doi.org/10.1073/pnas.1004569107">  BSS-SAXS, Yang et al. 2010</a></li><a href="http://dx.doi.org/10.1073/pnas.1004569107">
+</a><li><a href="http://dx.doi.org/10.1073/pnas.1004569107"> </a><a href="http://dx.doi.org/10.1016/j.str.2010.10.006">  EROS,Rozycki et al. 2011 </a></li><a href="http://dx.doi.org/10.1016/j.str.2010.10.006">
+</a></ul></td>
+</tr>
+
+<tr>
+<td> after 2013 </td>
+<td>Residue-level Structure Determination with SAXS Data</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h1> <a name="Conditions For Ensembles"></a>Conditions that justify modeling SAXS data with an ensemble proposed by <a href="http://dx.doi.org/10.1146/annurev-biophys-083012-130301">Rambo and Tainer (2013)  </a></h1>
+<ul>
+<li>Lack of convergence of the Kratky plot</li>
+<li>Invalidation of the Porod-Debye Law</li>
+<li>Flory's inequality</li>
+<li>Low particle density</li>
+<li>Inability to model data with a single model</li>
+</ul>
+
+
+
+
+
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+
+<h2> <a name="Miscellaneous Links"></a>Miscellaneous Links </h2>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://smallangle.org/"> SAS Portal </a>, THE home for Small Angle Scattering </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.small-angle.ac.uk/small-angle/Links.html"> SAXS Links</a> Software for small angle scattering, maintained by Diamond Light Source, UK </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/ExternalInfo/Research/Sax/">Dmitri Svergun (EMBL), a leader of the biological SAXS field </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="https://en.wikipedia.org/wiki/Biological_Small-Angle_X-ray_Scattering">Biological small-angle scattering wikipedia </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="https://en.wikipedia.org/wiki/Small-angle_X-ray_scattering">SAXS wikipedia </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="https://en.wikipedia.org/wiki/List_of_synchrotron_radiation_facilities">List of synchrotron radiation facilities </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/biosaxs/embo10.html">EMBL, Practical Course: Solution Scattering from Biological Macromolecules </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://biosync.sbkb.org/regionallisting.do?region=Americas">Biosync </a><br>  
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/saxs_protocols/index.php">Biosaxs links</a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.saxier.org/forum/index.php">SAXier, a forum about SAXS </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.esrf.eu/UsersAndScience/Experiments/MX/About_our_beamlines/BM29/Users/data-collection-information/saxs-data-analysis">SAXS data analysis </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.synchrotron.org.au/index.php/aussyncbeamlines/saxswaxs/saxs-data-a-processing">SAXS data processing</a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.leanne.dyksterhuis.com/saxs-how-to">Dyksterhuis, introduction to SAXS </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://scattering.tripod.com/">Kreichbaum </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://scattering.tripod.com/xitami/java/Ihshell30.html">Concentric shell model, calculate scattering from cylinder </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://xray.utmb.edu/SAXNS"> UTMB SAXS and SANS Group, access restricted to Gulf Coast Consortia, have many links</a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h2> <a name="SANS beam lines"></a>SANS beam lines </h2>
+<p> United States </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://neutrons.ornl.gov/biosans/">ORNL, Oak Ridge National Lab, </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.indiana.edu/~lens/">LENS, Low Energy Neutron Source, Indiana U. </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.nist.gov/ncnr/ng3-sans-small-angle-neutron-scattering.cfm"> NIST, Center for Neutron Research</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://lansce.lanl.gov/lujan/instruments/LQD.shtml">Lujan Neutron Scattering Center at LANSCE, Los Alamos National Laboratory, Low-Q Diffractometer, 0.003 to 0.5 Ã-1 </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://jins.tennessee.edu/epscor/index.html"> EPSCOR Neutron Scattering Network</a></p><a href="http://jins.tennessee.edu/epscor/index.html">
+
+<br> 
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://jins.tennessee.edu/epscor/index.html"></a><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h2> <a name="SAXS beam lines"></a>SAXS beam lines </h2>
+<br> 
+<p> </p><h3>United States Synchrotrons</h3><p></p>
+<br> 
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://bl1231.als.lbl.gov/">Advanced Light Source</a>, Berkeley, ALS 12.3.1. SAXS  SIBYLS (described in a 2013 paper) </p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://alsusweb.lbl.gov/">ALS</a> SIBYLS proposal deadlines: 15th of the month for a two-month run cycle beginning one-and-half months after the preceding submission deadline</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (e.g., apply before Dec. 15th and get time between Feb.1 and Mar. 30th).</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://alsusweb.lbl.gov/4DCGI/WEB_GetForm/PXProposalEntry.shtml/Initialize">ALS proposal link</a></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.bio.aps.anl.gov/index.html">Advanced Photon Source</a>, Argonne National Lab, Chicago. biocat ID-18</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://small-angle.aps.anl.gov/">APS, small-angle x-ray scattering </a></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.aps.anl.gov/Users/Help/how_to_wow.html"> APS guide to writing a winning beam line proposal</a></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The APS has a large number of SAXS beam lines with most of them dedicated to materials science. Attending the Beyond Rg Workshop at APS is a good way of becoming familiar with the capabilities of the beam lines as well as by talking to the beam line scientists which is strongly encouraged. Only Biocat beam line 18 is committed to doing bioSAXS and fiber diffraction (Tom Irving (irving@iit.edu) is the local expert on fiber diffraction). It is currently unique in having liquid chromatography SAXS (LC-SAXS) as an option. The beam line scientist Srinivas Chakravarthy is advocating this technique. The sample volume requirement is 300 microliters with 100 mls of dialysis buffer. The rising and falling shoulders of the peak coming off a 25 ml size exclusion column provide two dilution series and thus lots of data for determining Rg with extrapolation to infinite dilution. It takes an hour to run one sample, but only one sample is required per molecule or molecule* buffer combination. There is a talk of an even smaller SEC column that will enable the collection of data on six samples per hour if they have the sample buffer. The three stations at beam line 12 can be configured to do bioSAXS. 12-ID-C and -D can do time resolved and anomalous SAXS on biological samples. Xiaobing Zuo  (zuox@anl.gov) is a beam line scientist at 12-ID-C and -D who has written software for calculating SAXS profiles that is unique in being able to allow the inclusion of heavier atoms in the calculated SAXS profile. This software is unpublished. It is available by writing to him. He also has published a number of papers on SAXS studies of RNA. Beam lines 12 and 18 have time-resolved capabilities with time resolution down to the 20 microsecond scale. One station at ID-5 can do bioSAXS with a flow cell.  It requires 250-300 microliter samples per dilution, about 10x the sample requirement of a station with a liquid handling robot. ID-5 is the Dupont-Northwestern-Dow CAT. It has 25% general user access. Steven Weigand at this beam line has co-authored several bioSAXS papers.</p> 
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.bio.aps.anl.gov/"> BioCAT, beam lines at sector 18, fiber diffraction and BioSAXS. </a></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://fibernet.vanderbilt.edu/"> fibernet</a></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.macchess.cornell.edu/MacCHESS/biosaxs.html">CHESS</a>, MacCHESS BioSAXS</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.nsls.bnl.gov/beamlines/beamline.asp?blid=X9">NSLS SAXS X9 line</a></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://x21.nsls.bnl.gov/">NSLS X21</a></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www-ssrl.slac.stanford.edu/~saxs/">SSRL BIOSAXS BL 4-2</a></p>
+<p style="margin-left:1.4in;text-indent:-.6in"><a href="http://www-ssrl.slac.stanford.edu/content/user-resources/ssrl-deadlines">proposal deadlines, SAXS under UV/X-ray</a></p><a href="http://www-ssrl.slac.stanford.edu/content/user-resources/ssrl-deadlines">
+<p> </p><h3>Foreign Synchrotrons</h3><p></p>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www-ssrl.slac.stanford.edu/content/user-resources/ssrl-deadlines"> </a><a href="http://www.synchrotron.org.au/index.php/aussyncbeamlines/saxswaxs/saxs-data-a-processing">Australian Synchrotron SAXS 15ID </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://www.alineinc.com/biosaxs%20SAXS">BioSAXS scattering cells </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://www.esrf.eu/UsersAndScience/Experiments/MX/About_our_beamlines/BM29">ESRF BM29 </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="#FASTLINKS">Back to top </a></p>
+
+<p></p><h2> <a name="SAXS beam lines, mail in-services"></a>SAXS beam lines, mail in-services</h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="https://bl1231.als.lbl.gov/htsaxs/about"> ALS  Mail In SAXS </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://biosaxs.com/contact.html">  Biosaxs.com</a>, supervised by Dmitri Svergun </p>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://express.chess.cornell.edu/EM_form.php">CHESS On-line Express-Mode Proposal Form</a></p>
+
+<hr style="border:3px solid #4F1315">
+
+<p></p><h2> <a name="SAXS Databases"></a>SAXS Databases:</h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dara.embl-hamburg.de/"> DARA, DAtabase for RApid search of structural neighbours for proteins based on their Xâray smallâangle scattering patterns. DaRa is built from ~24,000 PDB structures with sequence homology of less than 90%. DaRa takes experimental data processed by Gnom as input. The molecular weight of the protein is used to filter the search pool. Sokolova et al. (2003) Prototype of a database for rapid protein classification based on solution scattering data. J. Appl. Cryst. 36, 865-868 </a></p><a href="http://dara.embl-hamburg.de/">
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://dara.embl-hamburg.de/"></a><a href="http://www.bioisis.net/">BIOISIS, Integrated Structures in Solution Databank; the "Protein Data Bank" of SAXS;  can download saxs data and use as tutorials </a><br>
+</p><p style="margin-left:.9in;text-indent:-.6in">Citing BIOISIS:   Rambo, R. (2009). BIOISIS, http://www.bioisis.net/. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+
+<h2> <a name="SANS Examples"></a>SANS Examples (to be finished later)</h2>
+<p style="margin-left:.9in;text-indent:-0.6in"> <a href="http://www.ncnr.nist.gov/staff/hammouda/"> Instrument scientist at NIST</a></p> 
+ 
+<h2> SAXS Examples (to be finished later)</h2>
+<p style="margin-left:.9in;text-indent:-.6in"> <a name="#SAXS Examples by Experiment Type">SAXS Examples by Experiment Type</a></p>
+<p style="margin-left:.9in;text-indent:0.7in">Ab initio shape determination</p>
+<p style="margin-left:.9in;text-indent:0.7in">anomalous scattering</p>
+<p style="margin-left:.9in;text-indent:0.7in">Complexes</p>
+<p style="margin-left:.9in;text-indent:0.7in">Domain Motion</p>
+<p style="margin-left:.9in;text-indent:0.7in">Determine Protein-Protein Interaction Potentials in Solution</p>
+<p style="margin-left:.9in;text-indent:1.5in"> <a href="http://dx.doi.org/10.1529/biophysj.107.123240"> Kim et al. 2008</a></p><p>
+</p><p style="margin-left:.9in;text-indent:0.7in">Phasing Diffraction Data with Envelope from SAXS</p>
+<p style="margin-left:.9in;text-indent:1.5in"> <a href="http://dx.doi.org/10.1107/S0907444906014089"> Hao 2006</a><a></a></p><p><a>
+</a></p><p style="margin-left:.9in;text-indent:0.7in"><a>Homology Model Selection</a></p><a>
+<p style="margin-left:.9in;text-indent:0.7in">NMR and SAXS</p>
+<p style="margin-left:.9in;text-indent:0.7in">Mobile surface loops</p>
+<p style="margin-left:.9in;text-indent:0.7in">Time-resolved SAXS</p>
+<p style="margin-left:.9in;text-indent:0.7in">Unfolding studies</p>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:1px dashed #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"> <a name="SAXS Examples by Disease">SAXS Examples by Disease</a></p>
+<p style="margin-left:.9in;text-indent:0.7in">Cancer</p>
+<p style="margin-left:.9in;text-indent:0.7in">Diabetes</p>
+<p style="margin-left:.9in;text-indent:0.7in">Heart</p>
+<p style="margin-left:.9in;text-indent:0.7in">Infectious Disease--Bacteria</p>
+<p style="margin-left:.9in;text-indent:0.7in">Infectious Disease--Eucaryote</p>
+<p style="margin-left:.9in;text-indent:0.7in">Infectious Disease--Viral</p>
+<p style="margin-left:.9in;text-indent:0.7in">Prion Diseases</p>
+<p style="margin-left:.9in;text-indent:0.7in">Vision</p>
+<hr style="border:1px dashed #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"> <a name="SAXS Examples by Macromolecule">SAXS Examples by Macromolecule Type</a></p>
+<p style="margin-left:.9in;text-indent:0.7in">Complexes of proteins</p>
+<p style="margin-left:.9in;text-indent:0.7in">Complexes of proteins and DNA</p>
+<p style="margin-left:.9in;text-indent:0.7in">Complexes of proteins and RNA</p>
+<p style="margin-left:.9in;text-indent:0.7in">Complexes of Protein and Peptides</p>
+<p style="margin-left:.9in;text-indent:0.7in">Complexes of Protein and small molecular ligands</p>
+<p style="margin-left:.9in;text-indent:0.7in">DNA</p>
+<p style="margin-left:.9in;text-indent:0.7in">Disordered proteins</p>
+<p style="margin-left:.9in;text-indent:0.7in">Glycoproteins</p>
+<p style="margin-left:.9in;text-indent:0.7in">Glycans</p>
+<p style="margin-left:.9in;text-indent:0.7in">Integral membrane proteins</p>
+<p style="margin-left:.9in;text-indent:0.7in">Metalloproteins</p>
+<p style="margin-left:.9in;text-indent:0.7in">RNA</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px dashed #4F1315">
+<h2> <a name="WAXS Examples"></a>WAXS Examples</h2>
+<p style="margin-left:.9in;text-indent:0.7in">Combining WAXS and crystallography to locate heavy atoms</p>
+<p style="margin-left:.9in;text-indent:1.5in"> <a href="http://dx.doi.org/10.1107/S0021889809003094"> Hong and Hao 2009</a><a></a></p><p><a>
+</a></p><p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h2> <a name="SAXS fee for service"></a>SAXS fee for service</h2>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://biosaxs.com/about.html"> BioSAXS.com </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+
+<h2> <a name="SAXS Instruments"></a><a>SAXS Instruments </a></h2><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="http://www.anton-paar.com/SAXS/59_Corporate_en?productgroup_id=107&SAXS">Anton Par </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.bruker.com/products/x-ray-diffraction-and-elemental-analysis/x-ray-diffraction/nanostar/overview">Bruker</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.hecus.at/">Hecus MicroCALIX, bought by Bruker</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="https://en.wikipedia.org/wiki/Rigaku">Rigaku wiki </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.rigaku.com/products/saxs/biosaxs1000">Rigaku bioSAXS1000 </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.youtube.com/watch?v=gF__RPXx3Q0">BioSAXS-1000 </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp;Dec 2012: 5 BioSAXS systems sold and 3 of those are installed: </p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;&nbsp;UTMB (installed), IGBMC (France - installed), Brown Univ (installed), </p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;&nbsp;McMaster Univ (Canada - installation by Feb), Masaryk Univ (Czech Rep - installation by Feb) 
+</p><p style="margin-left:.9in;text-indent:-.6in"> &nbsp; Peer reviewed papers with data collected with the BioSAXS-1000: </p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://pubs.acs.org/doi/pdf/10.1021/bi400294e"> Polizzi et al. (2013)</a> Biochemistry 52, 3888  3898.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.xenocs.com/products/saxs-waxs-systems.html">Xenocs SAXS and WAXS systems </a></p><a href="http://www.xenocs.com/products/saxs-waxs-systems.html">
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.xenocs.com/products/saxs-waxs-systems.html"></a><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h2> <a name="SAXS Meetings"></a>SAXS Meetings </h2>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.helmholtz-berlin.de/events/sas/"> SAS2015, International Small-Angle Scattering Conference </a>, 12-18 September 2015, Berlin, Germany </p><p>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://sas2018.aps.anl.gov/support.php"> SAS2018, International Small-Angle Scattering Conference, sponsored by APS </a>,October 2018, Traverse City, Michigan </p><p>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.small-angle.ac.uk/small-angle/Meetings.html"> Link to SAXS meetings</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS and Molecular GraphicsâChimera"></a>SAXS and Molecular Graphics  Chimera:</h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in">  Calculate SAXS curves from pdb file (uses FoxS): /Tools/Higher-Order Structure/Small-Angle X-ray Profile</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS and Molecular GraphicsâPyMOL"></a>SAXS and Molecular Graphics  PyMOL:</h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in">  SAXS envelopes:</p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;set solvent_radius, 5 </p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;set mesh_solvent, 1 </p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;If importing a PDB structure, use the [A] drag coordinates command to move the model </p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;(Use the SHIFT-mouse to move or rotate the model)</p>
+<br>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS and Molecular GraphicsâSITUS"></a>SAXS and Molecular Graphics  SITUS:</h2><p></p>
+<p> unfinished </p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;<a href="http://situs.biomachina.org/tutorial_saxs.html"> SITUS  SAXS tutorial </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS and Molecular GraphicsâVMD"></a>SAXS and Molecular Graphics  VMD:</h2><p></p>
+<p> unfinished </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h2> <a name="SAXS Software"></a> SAXS Software (alphabetical order):</h2><br> 
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://modbase.compbio.ucsf.edu/allosmod-foxs/"> Allosmod-FoXS v</a>, uses sampling algorithms to generate structures that are then put into FoXS to calculate scattering profile <br>
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://lorentz.dynstr.pasteur.fr/aquasaxs.php">AquaSAXS </a>, calculate SAXS from pdb file.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/biosaxs/atsas-online/">ATSAS on-line </a></p><a href="http://www.embl-hamburg.de/biosaxs/atsas-online/">
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/biosaxs/atsas-online/"></a><a href="http://www.embl-hamburg.de/biosaxs/software.html">ATSAS </a> download version 2.4 Data Analysis Software for Mac 10.6; 2.5 for Mac 10.7; windows and linux versions too.</p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;To get started with the ATSAS software on the Mac, type "primus" in a X11 or terminal window. It is usually installed /usr/bin. You may have to start it by typing "/usr/bin/primus" </p> 
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://spin.niddk.nih.gov/bax/nmrserver/saxs1/">AXES </a>: Analysis of X-ray Scattering in Explicit Solvent </p>
+<br>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/saxs_protocols/bilbomd.php">Bilbomd</a> a webapp that enables conformational sampling by molecular dynamics simulation with the SAXS data as a restraint </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://sourceforge.net/projects/bioxtasraw/">BioXTAS RAW </a> is a comprehensive package that is comparable to ATSAS and Scatter. It can do Singular Value Decompostion and Evolutionary Factor Analysis of SEC-SAXS data. It is wrapped in Python and is the only one of the three packages that is open-source. It has <a href="http://bioxtas-raw.readthedocs.io/en/latest/index.html"> on-line documentation</a>.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.bio.aps.anl.gov/xraytools.html"> BioCAT's X-ray Tools</a> on-line Q range calculator. 
+</p><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/biosaxs/crysol.html">CRYSOL </a> Svergun Group at EMBL-Hamburg, method of theoretical scattering profile calculation using multipole expansion </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://sbg.cib.csic.es/Software/Dalai_GA/"> Dalai_GA </a>uses genetic algorithm to fit SAXS data with bead models</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://yanglab.case.edu/software.html">Fast-SAXS-pro</a>, Yang Lab at Case Western, upload a PDB file and compute its theoretical SAXS profile. The PDB file can be of protein, DNA, RNA, or their complex. Coordinates can be at an atomic or a coarse-grained (e.g., Ca atoms of a protein)</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://spin.niddk.nih.gov/bax/software/">FastSAXS</a>, predecessor of FAST-SAXS-pro, Ad Bax Group </p>
+<p style="margin-left:.9in;text-indent:-.6in">FlexFitSAXS is a SAXS-based modeling tool that flexibly fits an initial protein structure with a given solution X-ray scattering profile based on a modified elastic network model.  <a href="http://www.ncbi.nlm.nih.gov/pubmed/22208197"> Click here </a> for access to a 2011 article about this program. This tool is available as a linux-based pre-compiled executables. Please contact Wenjun Zheng (wjzheng@buffalo.edu) for further information. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://modbase.compbio.ucsf.edu/foxs/index.html">FoXS</a>: a web server for rapid computation and fitting of SAXS profiles using the Debye Formula. Andre Sali group at UCSF, built into IMP, the Integrative Modeling Platform</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://modbase.compbio.ucsf.edu/foxsdock/">FoXSDock</a>: Macromolecular Docking with SAXS Profile</p>
+<br>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://godzilla.uchicago.edu/pages/jouko/hypred2.html">HyPred </a> server at U of Chicago: reads in a pdb and emails the user with predicted hydration shell densities and crystallographic water sites </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://godzilla.uchicago.edu/pages/projects.html">HyPred</a> related software </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://leonardo.inf.um.es/macromol/programs/hydropro/hydropro.htm">hydropro</a> predicts Rg and other hydrodynamic parameters from 3D models </p>
+<br>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://salilab.org/imp/">IMP, Integrative Modeling Platform</a>, binary and source available </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://usaxs.xray.aps.anl.gov/staff/ilavsky/irena.html">Irena</a> package for analysis of small-angle scattering data </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.ncnr.nist.gov/programs/sans/data/red_anal.html">SANS &amp; USANS </a> Analysis with IGOR Pro </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="https://www.wavemetrics.com/order/order1.php?type=Academic">Igor 6.2</a>, required for Irena </p>
+<br>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://md.chem.rug.nl/cgmartini/"> Martini: Coarse Grain Force Field for Biomolecular Simulations. Well-integrated with GROMACS and used in NAMD. </a></p><a href="http://md.chem.rug.nl/cgmartini/">
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://md.chem.rug.nl/cgmartini/"></a><a href="http://bl1231.als.lbl.gov/saxs_protocols/mes.php">MES</a> Minimal Ensemble Search </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://xray.utmb.edu/manuals/README_MES.html">MES tutorial </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://usaxs.xray.aps.anl.gov/staff/ilavsky/nika.html">Nika</a>, 2-D to 1-D data reduction prior to analysis by Irena above, need Igor Pro  </p>
+<br>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://xray.bmc.uu.se/usf/lsqman_man.html#S59">RMsd_calc </a>(calculate RMSD for subset of atoms with current operator)</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://kur.web.psi.ch/sans1/SANSSoft/sasfit.html">SASfit</a> for fitting small-angle scattering curves</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.smallangles.net/sassie/SASSIE/SASSIE_HOME.html">SASSIE</a> suite of program for generating molecular structures.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.structuralbiology.eu/content/sastbx">SASTBX </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="https://www.classe.cornell.edu/wsgi/macchess/Web_SAXS/parsing_post.wsgi"> SAXProf </a>, on-line for predicting scattering profiles, Kratky plots, Guinier plots (the last three have the Shannon Limit included on the Plot; noise in the Guinier; the P(r) function. You can also download the calculated scattering with noise. </p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.cs.colostate.edu/hpc/SAXS/software.php">SAXS 2011 </a>, Colorado State University Software Package </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.esrf.eu/Instrumentation/software/data-analysis/OurSoftware/SAXS/SaxsDownloads.html"> SAXS software at ESRF, linux and windows binaries and source code </a></p><a href="http://www.esrf.eu/Instrumentation/software/data-analysis/OurSoftware/SAXS/SaxsDownloads.html">
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.esrf.eu/Instrumentation/software/data-analysis/OurSoftware/SAXS/SaxsDownloads.html"></a><a href="http://structure.bio.purdue.edu/support/software/">saxs3d; xlattice; pdb2xyz_saxs </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://saxsgui.com/">SAXSgui </a>A Graphical User Interface for Visualizing, Transforming and Reducing SAXS Images (as well as Limited Fitting)</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.dokkyomed.ac.jp/users/saxs/">SaxsMDView, SAXSANA, TraceBeads, SaxsAnalysis, SVD and reconstruction, UnfoldingFit, CalibCCD </a> at Tokyo University </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://sourceforge.net/projects/saxsview">SAXSview</a>, process 2-D data and 1-D data, source forge download</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.if.sc.usp.br/~saxs/"> MoW</a>, run from website, requires GNOM output with data in (angstrom)-1, calculates MW and oligimerization.</p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/saxs_similarity/index.php"> SAXS similarity matrix, on-line service. </a></p>  
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www-ssrl.slac.stanford.edu/~saxs/analysis/saxspipe.htm"> SAXSpipe, python wrapper of several programs by Dr. Lester Carter at SSRL BL 4-2 </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://zhanglab.ccmb.med.umich.edu/SAXSTER/">SAXSTER </a>uses SAXS profile to select homology model template.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/2013/07/initial_release_of_scatter.php"> ScÅtter</a> software for the analysis of biological SAXS datasets, computes the new statistics described in the 2013 Nature paper by Rambo and Tainer</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://sculptor.biomachina.org/">SCULPTOR </a>interactive multi-resolution docking and visualization program for low-resolution density maps and atomic structures. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://situs.biomachina.org/">SITUS </a>package for the modeling of atomic resolution structures into low-resolution density maps e.g. from electron microscopy, tomography, or small angle X-ray scattering. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://physchem.kfunigraz.ac.at/sm/Software.htm">Singlebody </a> calculates p(r) and I(q) functions of models defined by sets of IF conditions using a Monte-Carlo approach. Cross section and thickness functions of cylinders and lamellae can be calculated as well. The program is freeware. Executable for Windows. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.oumedicine.com/docs/default-source/ad-biochemistry-workfiles/Utrascan%20III%E2%80%93SOMO%3C/a%3E%20Boris%20Demeler's%20analytical%20ultracentrifuge%20package%20with%20the%20ability%20to%20calculate%20X-ray%20scattering%20profiles%20from%20atomic%20coordinates%20and%20from%20bead%20models%20via%20SOMO:%20soluton%20modeling.%20%20%3C/p%3E%3Cbr%3E%3Cp%20style=" margin-left:.9in;text-indent:-.6in"=""></a><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://godzilla.uchicago.edu/pages/jouko/waxs_calculator.html">WAXS profile calculator from</a> , on-line, U of Chicago. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h2><a name="Collections of SAXS Software"></a>Collections of SAXS Software </h2>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://lorentz.dynstr.pasteur.fr/aquasaxs/homes.php">Links to sites involved in predicting SAXS profiles.</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.small-angle.ac.uk/small-angle/Software.html">CCP13 </a>SAXS software</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://scattering.tripod.com/">Manfred Kriechbaum collection of java scripts for calculating SAXS profiles from geometric shapes</a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.cs.colostate.edu/saxs/index.php?title=SAXS_Software_Wiki">SAXS Software Wiki  </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.esrf.eu/UsersAndScience/Experiments/TBS/SciSoft/OurSoftware/SAXS">SAXS software at ESRF  </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.esrf.eu/UsersAndScience/Experiments/TBS/SciSoft">ESRF software </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://sastbx.als.lbl.gov/wiki/index.php/Main_Page">Sastbx: The Small Angle Scattering ToolBox </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://sastbx.als.lbl.gov/cgi-bin/index.html">Sastbx Online Services  </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<h2><a name="SAXS Software Developer Groups"></a>SAXS Software Developer Groups</h2>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.cs.colostate.edu/hpc/SAXS/people.php">ado State, Data Analysis for Small Angle X-ray Scattering </a></p> 
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/biosaxs/">EMBL-Hamburg, Biological Small Angle Scattering Group </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.ill.eu/fileadmin/users_files/Other_Sites/saxs-sans/Front_Page.htm">ESRF, Grenoble, France; SAXS Platform for Structural Biology </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://xray.utmb.edu/SAXNS">SAXNS,</a> UTMB SAXS and SANS Group, has some unique software and many links</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS Related Software: Molecular Motion Similuation">SAXS Related Software: Molecular Motion Simulation</a></h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.csb.pitt.edu/ProDy/">  ProDy</a>--Python package for protein structural dynamics analysis.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://sourceforge.net/projects/durham-ddpt/DDPT">DDPT</a>--A Comprehensive Toolbox for the Analysis of Protein Motion</p>
+
+<hr style="border:3px solid #4F1315">
+<h2> <a name="SAXS Reviews">SAXS Reviews</a></h2>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://dx.doi.org/">  </a><a></a></p><a>
+<div style="text-align:center;border:1px solid red"> 2001 </div>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a> </a><a href="http://dx.doi.org/">Doniach, S. (2001) </a><a>Changes in biomolecular conformation seen by small angle X-ray scattering. Chem Rev 101, 1763-1778.</a></p><a>
+<br>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:1px solid red"> 2003 </div>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://dx.doi.org/10.1017/S0033583503003871"> Koch et al. (2003) </a><a>Small-angle scattering: a view on the properties, structures and structural changes of biological macromolecules in solution. Q Rev Biophys 36, 147-227. (Comment: a very rigorous review.) </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a> </a><a href="http://dx.doi.org/10.1016/S0076-6879(03)74024-5">Vachette et al. (2003) </a><a> Looking behind the beamstop: X-ray solution scattering studies of structure and conformational changes of biological macromolecules. Methods Enzymol 374, 584-615. </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:1px solid red"> 2006 </div>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://www.stanford.edu/~rhiju/StructuralStudies.pdf"> Das, R. and Doniach, S. (2006). </a><a>Structural studies of proteins and nucleic acids in solution using small angle x-ray scattering (SAXS)," in Soft Matter: Scattering, Imaging and Manipulation, eds. Pecora, R. and Borsali, R., Kluwer Press. </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:1px solid red"> 2007 </div>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://dx.doi.org/10.1146/annurev.biophys.36.040306.132655">Lipfert, J. and Doniach, S. (2007) </a><a>Small-angle X-ray scattering from RNA, proteins, and protein complexes. Annu. Rev. Biophys. Biomol. Struct. 36, 307-27. </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a> </a><a href="http://dx.doi.org/10.1017/S0033583507004635">Putnam et al. (2007) </a><a>X-ray solution scattering (SAXS) combined with crystallography and computation: defining accurate macromolecular structures, conformations and assemblies in solution. Q Rev Biophys 40, 191-285. (Deep and complete review). </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a> </a><a href="http://dx.doi.org/10.1107/S0108767307046569">Stuhrmann, H. B. (2007) </a><a>Small-angle scattering and its interplay with crystallography, contrast variation in SAXS and SANS. Acta Crystallographica. Section A, Foundations of Crystallography 64, 181-91.  </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a> </a><a href="http://scripts.iucr.org/cgi-bin/paper?sm6023"> Svergun, DI (2007) </a><a>Small-angle scattering studies of macromolecular solutions. J. Appl. Crystallogr. 40, s10âs17. </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:1px solid red"> 2009 </div>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://dx.doi.org/10.1016/S0076-6879(09)69011-X">Doniach, S. and Lipfert, J. (2009)</a><a> Use of small angle X-ray scattering (SAXS) to characterize conformational states of functional RNAs. Methods Enzymol 469, 237-251.</a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a> </a><a href="http://dx.doi.org/10.1038/nmeth.1353">Hura et al. (2009) </a><a>Robust, high-throughput solution structural analyses by small angle X-ray scattering (SAXS). Nat Methods 6, 606-612. </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:1px solid red"> 2010 </div>
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://dx.doi.org/10.1016/j.sbi.2009.12.015">Rambo, R.P. and Tainer, J.A. (2010)</a><a> Bridging the solution divide: comprehensive structural analyses of dynamic RNA, DNA, and protein assemblies by small-angle X-ray scattering. Curr Opin Struct Biol 20, 128-37. (Short Overview) </a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a> </a><a href="http://dx.doi.org/">Yang, S., Parisien, M., Major, F. and Roux, B. (2010)</a><a>  RNA structure determination using SAXS data. J. Phys. Chem. B, 114, 10039-48.</a></p><a>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:1px solid red"> 2011 </div>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1002/bip.21628"> Kathuria SV, Guo L, Graceffa R, Barrea R, Nobrega RP, Matthews CR, Irving TC, Bilsel O. (2011) </a> Minireview: Structural insights into early folding events using continuous-flow time-resolved small-angle X-ray scattering. Biopolymers 95, 550-558. </p> 
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1002/bip.21638">Rambo, R.P. and Tainer, J.A. (2011) </a> Characterizing flexible and intrinsically unstructured biological macromolecules by SAS using the Porod-Debye law. Biopolymers 95, 559-571. <a></a></p><a><br>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a></a><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:1px solid red"> 2012 </div>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1039/c1mb05275f">Bernado, P. and Svergun, D.I. (2012)</a> Structural analysis of intrinsically disordered proteins by small-angle X-ray scattering. Mol. Biosyst. 8, 151-67.</p>  
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1016/B978-0-12-415931-0.00010-0">Czjzek, M., Fierobe, H.P., and Receveur-Brechot, V. (2012) </a>Small-angle X-ray scattering and crystallography: a winning combination for exploring the multimodular organization of cellulolytic macromolecular complexes. Methods Enzymol 510, 183-210.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1016/b978-0-12-374920-8.00122-3">Doniach, S. and Lipfert, J. (2012) </a>"Small and Wide Angle X-ray Scattering from Biological Macromolecules and their Complexes in Solution." In: Edward H. Egelman, editor: Comprehensive Biophysics, Vol 1, Biophysical Techniques for Structural Characterization of Macromolecules, H. Jane Dyson. Oxford: Academic Press, 2012. pp. 376-397.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1007/s00249-012-0820-x"> Hammel, M. (2012). </a>Validation of macromolecular flexibility in solution by small-angle X-ray scattering (SAXS). Eur Biophys J 41, 789-99.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1107/s0021889812007662"> Petoukhov, M. V., Franke, D., Shkumatov, A. V., Tria, G., Kikhney, A. G., Gajda, M., Gorba, C., Mertens, H. D. T., Konarev, P. V., Svergun, D. I. (2012).</a> New developments in the ATSAS program package for small-angle scattering data analysis. J Appl Crystallogr, 45(2), 342-350. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1186/1472-6807-12-17"> Schneidman-Duhovny, D., Kim, S.J., and Sali, A. (2012) </a>Integrative structural modeling with small angle X-ray scattering profiles. BMC Structural Biology 12:17. COMMENT: A comprehensive review of the computational methods for incorporating SAS scattering profiles into structural modeling.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+
+<div style="text-align:center;border:2px solid red"> 2013 </div>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1016/j.bpj.2012.11.3817">Meisburger, S.P., Warkentin, M., Chen, H., Hopkins, J.B., Gillilan, R.E., Pollack, L., and Thorne, R.E. (2013) </a> Breaking the radiation damage limit with Cryo-SAXS. Biophys J. 2013 104, 227-336. COMMENT: this method could reduce sample size requirements and radiation damage. It could revolutionize biological SAXS. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1016/j.ymeth.2013.01.005">Perry, J.J. and Tainer, J.A. (2013)</a> Developing advanced X-ray scattering methods combined with crystallography and computation. Methods 59, 363-371. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1016/j.biocel.2012.10.017"> Petoukhov, M.V. and Svergun, D.I. (2013)</a> Applications of small-angle X-ray scattering to biomacromolecular solutions. The International Journal of Biochemistry &amp; Cell Biology 45, 429-437. COMMENT: Timely review that includes rigid body modeling, several examples of cutting edge applications of biological SAXS, and the status of high throughput SAXS. </p> 
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.annualreviews.org/doi/abs/10.1146/annurev-biophys-083012-130301">Rambo, R.R. and Tainer, J.A. (2013)</a>  Super-Resolution in Solution X-Ray Scattering and Its Applications to Structural Systems Biology. Annual Review of Biophysics 42, 415-441. COMMENT: Makes the case for modern SAXS. Provides concise comparison of current ab initio model building programs.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.nature.com/nature/journal/v496/n7446/full/nature12070.html"> Rambo, R.P. and Tainer, J.A. (2013)</a> Accurate assessment of mass, models and resolution by small-angle scattering. Nature 496, 477-481. COMMENT: Presents four new SAS parameters. First, a new SAS invariant, <i>V</i><sub>c</sub>, the volume of correlation that defines a <i>Q</i><sub>R</sub> ratio that in turn determines the molecular mass independent of the concentration. This paper also presents <i>&#967;</i><sup>2</sup><sub>free</sub>, a cross validated measure of the agreement between the model and the data that is analogous to <i>R</i><sub>free</sub> in crystallography. Finally, <i>R</i><sub>SAS</sub> is presented for the quantitative evaluation of resolution.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1016/j.str.2013.04.020"> Trewhella, J., Hendrickson, WA., Kleywegt, G.J., Sali, A., Sato, M., Schwede, T., Svergun, D.I., Tainer, J.A., Westbrook, J., and Berman, H.M. (2013) </a>Report of the wwPDB Small-Angle Scattering Task Force: data requirements for biomolecular modeling and the PDB. Structure 21, 875-881. COMMENT: Presents the conclusions and recommendations of the 12-13 July 2012 meeting of the Small-Angle Scattering Task Force of the worldwide Protein Data Bank at Rutgers Univ. in New Brunswick, New Jersey with regards to the archiving of SAXS data and the models derived from SAXS data.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1016/j.biocel.2012.10.017"> Kofinger, J., and Hummer, G. (2013) </a>Atomic-resolution structural information from scattering experiments on macromolecules in solution. Physical review. E, Statistical, nonlinear, and soft matter physics 87, 052712. COMMENT: Theoretical analysis suggests that PDDF may reveal atomic resolution detail when used with scattering data collection in X-ray laser experiments. </p> 
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://dx.doi.org/10.1021/bi400731u"> Petoukhov MV, Billas IM, Takacs M, Graewert MA, Moras D, Svergun DI. (2013) </a> Reconstruction of Quaternary Structure from X-ray Scattering by EquilibriumMixtures of Biological Macromolecules. Biochemistry. 52, 6844-55. COMMENT: Presents the application of GASBORMX and SASREFMX to simultaneous structure determination and oligomer analysis to certain types of polydisperse systems. This is a landmark paper. The approach is limited to monomers with as little as 15% volume fraction, so the approach it limited to systems with lower molecular symmetry (up to six-fold symmetry).</p>
+<div style="text-align:center;border:2px solid red"> 2014 </div>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS Seminars, local"></a>SAXS Seminars, Local </h2><p></p> 
+<p style="margin-left:.9in;text-indent:-.6in"> <a href="http://structuralbiology.ou.edu/symposium"> John Tanner (U of Missouri) May 20, 2013, OU-Norman </a></p><a href="http://structuralbiology.ou.edu/symposium"> 
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://structuralbiology.ou.edu/symposium"> </a><a href="http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/general-program-info/seminars/visiting-seminars"> Ed Snell, (Hauptman-Woodward Institute), June 19, 2013, 4 PM, BRC 109 OUHSC-OKC </a></p><a href="http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/general-program-info/seminars/visiting-seminars"> 
+<br>
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/general-program-info/seminars/visiting-seminars"></a><a href="#FASTLINKS">Back to top </a></p>
+
+
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS TextBooks"></a>SAXS Textbooks</h2><p></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.amazon.com/Small-Angle-X-Ray-Scattering-Applications-Structural/dp/0470494190/ref=sr_1_3?s=books&ie=UTF8&qid=1362061202&sr=1-3&keywords=Small-angle+scattering+X-rays"> Lipfert and Donaich </a> (coming August 31, 2015 ) Small-Angle X-Ray Scattering: Applications to Structural Molecular Biology. </p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href=" "> Lattman, Grant, and Snell (2018) Biological Small Angle Scattering: Theory and Practice. IUCr Book Series/Oxford Science Publications</a>
+</p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="https://www.amazon.com/Biological-Small-Angle-Scattering-Experimental/dp/9811060371"> 
+Chaudhuri, Munoz, Qian, and Urban (2017) Biological Small Angle Scattering: Techniques, Strategies and Tips, Springer<
+/a>
+</p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.amazon.com/gp/product/0199639531/ref=ox_sc_act_title_7?ie=UTF8&psc=1&smid=ATVPDKIKX0DER"> Svergun, D. I., Koch, M. H. J., Timmins, P.A., and May, R. P. (Nov. 1, 2013) Small Angle X-Ray and Neutron Scattering from Solutions of Biological Macromolecules</a> (International Union of Crystallography Texts on Crystallography). Oxford University Press.  Parts can be viewed on-line at Amazon.con </p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.embl-hamburg.de/biosaxs/reprints/feigin_svergun_1987.pdf"> Feigin, L.A. and Svergun, D.I. (1987)</a>. Structure Analysis by Small-Angle X-Ray and Neutron Scattering. New York: Plenum Press. p. 40. ISBN 0-306-42629-3. Download here </p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://physchem.kfunigraz.ac.at/sm/Software.htm">Glatter, Otto and Kratky, Otto (eds.)</a>: Small Angle X-ray Scattering. London: Academic Press (1982). Out of print but can download by clicking on authors's names. </p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://http//www.amazon.com/Small-angle-scattering-X-rays-Structure-matter/dp/B0007E66B6/ref=sr_1_2?s=books&ie=UTF8&qid=1362061202&sr=1-2&keywords=Small-angle+scattering+X-rays"> Guinier, A.  and  Fournet, G. </a><a>: Small-angle scattering of x-rays. New York: John Wiley &amp; Sons (1955) </a></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+
+
+
+
+<p></p><h2> <a name="SAXS Tutorials"></a>SAXS Tutorials:</h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.bioisis.net/tutorial/1"> From sample prep to data deposition in 8 steps at BioISIS</a></p><a href="http://www.bioisis.net/tutorial/1">
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.bioisis.net/tutorial/1"></a><a href="http://meetings.chess.cornell.edu/ACABioSAS/tutorials.html"> ACA 2013 meeting BioSAS Training Workshop: tutorials including data </a></p><a href="http://meetings.chess.cornell.edu/ACABioSAS/tutorials.html">
+
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://meetings.chess.cornell.edu/ACABioSAS/tutorials.html"></a><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SANS Workshops"></a>SAXS Working Groups:</h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.smallangles.net/">  Small Angles Net: </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.smallangles.net/wgwiki"> canSAS </a></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://smallangle.org/"> smallangle.org,</a> portal to SAS related information including lists of software </p>
+
+
+<p></p><h2> <a name="SANS Workshops"></a>SANS Workshops in USA:</h2><p></p>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://neutrons.ornl.gov/conf/gcnb2014/"> 5th Workshop on Neutron Scattering Applications in Structural Biology, Oak Ridge, Tennessee; June 16 - June 20, 2014; April 18th deadline </a></p><a href="http://neutrons.ornl.gov/conf/gcnb2014/">
+</a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://neutrons.ornl.gov/conf/gcnb2014/"></a><a href="http://jins.tennessee.edu/epscor/index.html"> people from EPSCOR </a> state can get travel fellowships </p>
+
+<hr style="border:3px solid #4F1315">
+<p></p><h2> <a name="SAXS Workshops"></a>SAXS Workshops in USA, upcoming:</h2><p></p>
+
+<p></p><h2> <a name="SAXS Workshops"></a>SAXS Workshops in USA, recent past:</h2><p></p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/2013_saxs_workshop/"> 4th annual SIBYLS bioSAXS workshop </a>; Advance Light Source (ALS) at Lawrence Berkeley National Laboratory , Berkeley, CA. Registration: To attend the workshop you need register for the 2013 Advanced Light Source User Meeting. ALS user meeting will be held at Berkeley Lab October 7-9. Workshop will begin October 8th and continue through October 9th. When you registering, you must indicate ``Small Angle X-Ray Scattering Studies In Structural Biology'' as your workshop. Enrollment is limited to 30 participants. Inquires: Jane Tanamachi jtanamachi@lbl.gov.</p> 
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://small-angle.aps.anl.gov/">APS, beyond Rg, SAXS Short-course </a> Advanced Photon Source, Argonne National Laboratory, October 26  31, 2013. No registration fee. Registration closed at end of June. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://meetings.chess.cornell.edu/ACABioSAS/materials.html"> ACA 2013 meeting BioSAS Training Workshop: slides.</a>
+</p><p style="margin-left:1.9in;text-indent:-.6in">This was a dual track workshop: <b>Beginner's Track</b> for those getting started with SAXS and <b>Advanced Methods Track</b> for experienced users ready to master advanced methods.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.regonline.com/Register/Checkin.aspx?EventID=1199918">APS: Irena and Nika, Argonne National Lab, Chicago; SAXS Software Packages Irena and Nika Spring 2013 Course; </a></p>
+<p style="margin-left:1.9in;text-indent:-.6in"> Thurs.- Fri., May 9-10, 2013 ; free ; limit of 20.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://workshops.ps.bnl.gov/default.aspx?w=SAXSApr2013">BNL-NSLS, Brookhaven National Lab-National Synchrotron Light Source; X9 SAXS Workbench; </a></p>
+<p style="margin-left:1.9in;text-indent:-.6in"> April 18-21, 2013; free; deadline April 1 </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.chess.cornell.edu/BioSAXS%20course/index.htm">CHESS, Cornell:</a></p>
+<p style="margin-left:1.9in;text-indent:-.6in"> two full days; March 21-23, 2013; $250 registration fee.</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://www-conf.slac.stanford.edu/smbsax/2013/">SSRL, Stanford Synchrotron Radiation Lightsource, Menlo Park; </a> </p>
+<p style="margin-left:1.9in;text-indent:-.6in"> three full days; March 18 - 20, 2013; $100 registration fee. </p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+

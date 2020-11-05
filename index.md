@@ -95,14 +95,16 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 * * *
 
 <h1 align="center"> <a name="Advantages of Access to a Local Instrument"></a> Advantages of Access to a Local Instrument</h1>
+
 1. Many samples are stable only for a one week or two after purification. Scheduled time at a beam line has to be arranged a minimum of two weeks in advance for a rapid access program and several months for regular programs.</p>
-2. Many samples are to hard transport without freezing. Many samples lack freezing protocols. </p>
+2. Many samples are to hard transport without freezing. Many samples lack freezing protocols.
 3. Many samples need the solution conditions optimized to eliminate aggregation or interparticle effects. There is not much time during a trip to a beam line to optimize solution conditions. 
 4. Interparticle effects are hard to detect by other methods. 
-<br>
+
 <p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+
 <hr style="border:3px solid #4F1315">
-<h1 align="center"> <a name="Historical Milestones in SAXS"></a> Historical Milestones in SAXS from <a href="http://dx.doi.org/10.1146/annurev-biophys-083012-130301">Rambo and Tainer (2013)  </a></h1>
+<h1 align="center"> <a name="Historical Milestones in SAXS"></a> Historical Milestones in SAXS from <a href="http://dx.doi.org/10.1146/annurev-biophys-083012-130301">Rambo and Tainer (2013)</a></h1>
 
 
 <table border="2" cellpadding="10" align="center">

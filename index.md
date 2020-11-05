@@ -371,7 +371,7 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 <p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;&nbsp;UTMB (installed), IGBMC (France - installed), Brown Univ (installed), </p>
 <p style="margin-left:.9in;text-indent:-.6in"> &nbsp; &nbsp;&nbsp;McMaster Univ (Canada - installation by Feb), Masaryk Univ (Czech Rep - installation by Feb) 
 </p><p style="margin-left:.9in;text-indent:-.6in"> &nbsp; Peer reviewed papers with data collected with the BioSAXS-1000: </p>
-<p style="margin-left:.9in;text-indent:-.6in"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://pubs.acs.org/doi/pdf/10.1021/bi400294e"> Polizzi et al. (2013)</a> Biochemistry 52, 3888  3898.</p>
+<p style="margin-left:.9in;text-indent:-.6in"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://pubs.acs.org/doi/pdf/10.1021/bi400294e"> Polizzi et al. (2013)</a> Biochemistry 52, 3888 - 3898.</p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.xenocs.com/products/saxs-waxs-systems.html">Xenocs SAXS and WAXS systems </a></p><a href="http://www.xenocs.com/products/saxs-waxs-systems.html">
 </a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://www.xenocs.com/products/saxs-waxs-systems.html"></a><a href="#FASTLINKS">Back to top </a></p>
 <hr style="border:3px solid #4F1315">
@@ -468,7 +468,7 @@ Still a work in progress. Please report dead links, corrections, and suggested a
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/saxs_similarity/index.php"> SAXS similarity matrix, on-line service. </a></p>  
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://www-ssrl.slac.stanford.edu/~saxs/analysis/saxspipe.htm"> SAXSpipe, python wrapper of several programs by Dr. Lester Carter at SSRL BL 4-2 </a></p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://zhanglab.ccmb.med.umich.edu/SAXSTER/">SAXSTER: </a>uses SAXS profile to select homology model template.</p>
-<p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/2013/07/initial_release_of_scatter.php"> ScÅtter</a> software for the analysis of biological SAXS datasets, computes the new statistics described in the 2013 Nature paper by Rambo and Tainer</p>
+<p style="margin-left:.9in;text-indent:-.6in"><a href="http://bl1231.als.lbl.gov/2013/07/initial_release_of_scatter.php"> ScÅtter </a> software for the analysis of biological SAXS datasets, computes the new statistics described in the 2013 Nature paper by Rambo and Tainer</p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://sculptor.biomachina.org/">SCULPTOR: </a>interactive multi-resolution docking and visualization program for low-resolution density maps and atomic structures. </p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://situs.biomachina.org/">SITUS: </a>package for the modeling of atomic resolution structures into low-resolution density maps e.g. from electron microscopy, tomography, or small angle X-ray scattering. </p>
 <p style="margin-left:.9in;text-indent:-.6in"><a href="http://physchem.kfunigraz.ac.at/sm/Software.htm">Singlebody: </a> calculates p(r) and I(q) functions of models defined by sets of IF conditions using a Monte-Carlo approach. Cross section and thickness functions of cylinders and lamellae can be calculated as well. The program is freeware. Executable for Windows. </p>

@@ -1,9 +1,9 @@
----
-title: "Biomolecular Small Angle Scattering Links"
-author: "Blaine Mooers"
-date: "July 22, 2018"
-output: html_document
----
+# Biomolecular Small Angle Scattering Links
+
+Still a work in progress. Please report dead links, corrections, and suggested additions to blaine-mooers at ouhsc.edu.
+
+## Abbreviations:
+
 - SAXS: Small Angle X-ray Scattering   
 - SANS: Small Angle Neutron Scattering
 - MAXS: Medium Angle X-ray Scattering
@@ -12,13 +12,9 @@ output: html_document
 - SWAXS: Small Angle/Wide Angle X-ray Scattering Combined    
 - SMWAXS: Small Angle/Medium Angle/Wide Angle X-ray Scattering Combined
 
-***
-
-Still a work in progress. Please report dead links, corrections, and suggested additions to blaine-mooers at ouhsc.edu.
-
 <hr style="border:3px solid #4F1315">
 
-### Quick introductions to biological SAXS
+## Quick introductions to biological SAXS
 
 <a href="http://www.macchess.cornell.edu/MacCHESS/biosaxs_whatis.html"> A "Need-to-Know Quick Start Guide"</a> from the Biological Small-Angle X-Ray Solution Scattering (BioSAXS) at MacCHESS </a>
 

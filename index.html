@@ -5,7 +5,6 @@
 <!-- off white #f5f4f0   reddish slate #E4D2C1  OU brickred #4F1315   light green #FFEFB2  light blue #F6F8FF   light-green #fceeaf   royal blue #0D2A70   light-green #FFFCCC  light gray F6F4F0 -->
 <!--<body bgcolor=#FDF9D8  style="font-family:arial;font-size:15px"> -->
 <link rel="stylesheet" href="style.css">
-<body bgcolor=#f5f4f0  style="font-family:arial;font-size:15px">
 <style type="screen.css">
 A:link {text-decoration: none; : black}
 A:visited {text-decoration: : orange}
@@ -19,6 +18,11 @@ A:hover {text-decoration: underline; : red;}
     padding:0px;
     }
 </style>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 <style>
 table {
   border:1px solid red;
@@ -59,10 +63,10 @@ ul {
 }
 -->
 </STYLE>
+</head>
+<body bgcolor=#f5f4f0  style="font-family:arial;font-size:15px">
 
-
-
-<h1 align="center"> Biomolecular Small Angle Scattering Links </h1>
+<h1 align="center"> Biological Small Angle Scattering Links </h1>
 
 Still a work in progress. Please report dead links, corrections, and suggested additions to blaine-mooers at ouhsc.edu. 
     
@@ -386,6 +390,135 @@ These arguments are useful for equipment grant applications.
 <li></a><p style="margin-left:.9in;text-indent:-.6in"><a href="http://dara.embl-hamburg.de/"></a><a href="http://www.bioisis.net/">BIOISIS, Integrated Structures in Solution Databank; the "Protein Data Bank" of SAXS;  can download saxs data and use as tutorials </a></li>
 </p><p style="margin-left:.9in;text-indent:-.6in">Cite BIOISIS as follows:   Rambo, R. (2009). BIOISIS, http://www.bioisis.net/. </p></li>
 </ul>
+
+<p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
+<hr style="border:3px solid #4F1315">
+
+
+<h2> <a name="SAXS Equations"></a>SAXS Databases:</h2>
+
+<h2> Note: use Chrome or Safari to copy LaTeX code for the equations (Chrome works better)</h2>
+<h4> Right click on an equation. Select "Show Math As/TeX Commands". Select and copy the equation. Paste into *.tex file </h4> 
+<h4> Right click on an equation. Select "Show Math As/MathML Code". Select and copy the equation. Paste into MS Document. </h4> 
+<h2><a name="FASTLINKS">Indices </h2>
+</h2>
+<p> <A href="#Scattering Basics"> Scattering Basics</p>
+<p> <A href="#SAXS and Molecular Weight Determination">SAXS and Molecular Weight Determination </p>
+<p> <A href="#SAXS profile calculation">SAXS profile calculation </p>
+<p> <A href="#SAXS ab initio structure calculation with spherical harmonics">SAXS ab initio structure calculation with spherical harmonics </p>
+<p> <A href="#Using SAXS to Study Protein Interactions">Using SAXS to Study Protein Interactions </p>
+
+<hr/>
+<h2> <a name="MathJax Links">MathJax Links </h2>
+<p><A href="http://docs.mathjax.org/en/latest/start.html"> mathjax.org </a></p>
+<p><A href="http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands"> Latex commands in Mathjax </a></p> 
+<p><A href="http://www.suluclac.com/Wiki+MathJax+Syntax">  MathJax Syntax tutorial</a></p>
+<p><A href="http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm"> TeX MathJax Documentation</a></p>
+<p><A href="http://en.wikipedia.org/wiki/Math_markup"> List of mathematical symbols
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+<hr/>
+
+<p><h2> <a name="SAXS and Molecular Weight Determination">SAXS and Molecular Weight Determination:</h2></p>
+<hr/>
+<p>Conditions for determination of MW of proteins in solution: </p>
+<p>1. system must be monodisperse</p>
+<p>2. the solution should be dilute enough to avoid interparticle effects</p>
+<p>3. the solution should be statistically isotropic</p>
+<p>4. the proteins should be homogeneous( e.g., all of their parts should have equivalent electron density so that the two electron density model can be applied. </p>
+<p>5. the scattering curves need to be free of experimental smearing effects. </p>
+<hr/>
+<p>SAXS intensity from \( N \) proteins per unit volume:</p>
+$$ I(q)=NV(\triangle\rho)^{2}\intop_{0}^{D_{max}}4\pi r^{2}\gamma_{0}(r)\frac{sin\, qr}{qr}dr  $$
+<p>where \( N \) is the number of proteins per unit volume, \( V \) is the protein volume, \( \triangle\rho \)
+  is the contrast or the difference between the average electron density of the protein and that of the buffer, \( D_{max} \)
+  is the maximum diameter of the protein, and \( \gamma_{0}(r) \)
+  is the particle correlation function: </p>
+ $$ \gamma_{0}(r)=\frac{\left\langle V(r)\right\rangle }{V}  $$
+ <p>where \( \left\langle V(r)\right\rangle \)
+is the orientational average of the intersection of the volume V of the protein and the same volume displaced by a vector \( r \). The particle correlation function has the following properties: </p>
+\begin{align} 
+\\
+& 1.\; \gamma_{0}(0)=1 \\
+\\
+& 2.\; \gamma_{0}(r)=0 \; for \; r > D_{max} \\
+\\
+& 3.\; \intop_{0}^{\infty}4\pi r^{2}\gamma_{0}(r)dr=V
+\\
+\end{align}
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+<hr/>
+<p>The Guinier Equation: </p>
+
+$$ I(q)\cong\rho_{o}^{2}V^{2}exp\left(-\frac{1}{3}q^{2}R_{g}^{2}\right) $$
+
+<p>The SAXS intensity extrapolated to \( q=0 \), \( I(0) \) is given by </p>
+$$ I(0)=N(\triangle\rho)^{2}V^{2} $$
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+<hr/>
+<p>The integral of \( I(q)q^{2} \) from \( q=0 \) to \( q=\infty \) is termed the invariant, \( Q \). </p>
+$$ Q=\intop_{0}^{\infty}I(q)q^{2}dq=2\pi^{2}\left(\triangle\rho\right)^{2}V^{2} $$
+<p>The protein's volume is proportional to the ratio between \( I(0) \) and \( Q \) , so the volume can be determined directly from the data without the intensities being on an absolute scale.</p>
+$$ V=2\pi^{2}\frac{I(0)}{Q} $$
+<p>The method does not require knowledge of the protein concentration in the solution or the difference in the average electron density between the protein and the buffer. </p>
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+<hr/>
+
+<p>The molecular weight of the proteins obtained from the SAXS data is MW is calculated by multiplying the volume \( V \) in \( \unicode{xC5}^{3} \) by the average protein density 
+\( \rho{}_{m} = 0.83 \; \times \; 10^{-3} kDa \; \unicode{xC5}^{-3} \) which is equivalent to the more commonly used value of \( \rho{}_{m}
+  = 1.37\; g \; \times \; cm^{-3} \). This average was determined experimentally in solution by Squire and Himmel (1979) and Gekko & Noguchi (1979). This value is smaller than the theoretical value because it includes the effect of a shell of water. </p>
+<p>Proteins have the 78% of the partial specific volume of RNA and RNA have 128% the partial specific volume of proteins. </p>
+
+$$ MW=V\rho_{m} $$
+$$ MW=2\pi^{2}\frac{I(0)}{Q}\rho_{m} $$
+
+<p>The above equations allow the determination of the molecular weight from the SAXS data if the basic requirements above are met and if the \( Q \)
+  is determined by integrating from \( q \) is equal to zero to very high  \( q \). If high angle data are not included, there will be seriously truncation errors in the calculation of the invariant  \( Q \). </p> 
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+<hr/>
+<p>Experimentally, \( q \) is determined between \( q_{min} \) and \( q_{max} \). The intensity below \( q_{min} \) should extrapolated to \( I(0) \). The extrapolation can be done with the program GNOM. </p>
+<p> The precise determination of \( I(q) \) at high  \( q \) is generally not possible due to experimental limitations or the SAXS intensity is too weak at high  \( q \) and thus difficult to record with acceptable precision within a reasonable counting time. Extrapolation of the SAXS intensity above  \( q_{max} \) leads to results that are subject to large statistical errors and is generally avoided. </p>
+<p>The calculation of \( Q \) as an integral up to \( q_{max} \) leads to \( Q' \) which is smaller than \( Q \): </p>
+ $$ Q'=\intop_{0}^{q_{max}}I(q)q^{2}dq $$
+ <p> This leads to the apparent volume, \( V' \): </p>
+ $$ V'=2\pi^{2}\frac{I(0)}{Q'} $$ 
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+<hr/>
+
+<p> The \(  I(q)  \) for a sphere of volume \( 10^{4} \unicode{xC5}^{3}  \) and R = 13.4 \( \unicode{xC5}  \) calculated from equation from Glatter and Kratky (1982): </p>
+  $$ I(q)=(\triangle\rho^{2})V^{2}\left[3\frac{sin\, qR-qR\, cos\, qR}{(qR)^{3}}\right]^{2} $$ 
+<p>The plot of the above equation against \( q \) and of \( I(q)q^{2} \) show how \( Q \) (which is the integral of the Kratky plot) oscillates to high \( q \) and how truncation of the data lead to underestimation of \( Q \).</p>
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+<hr/>
+<p> A plot of the real volume of a sphere \( (V=\frac{4}{3}\pi R^{3})  \) versus the apparent volume \( V'  \) calculated with different degrees of truncation (different \( q_{max}  \) ). The approximation works for spheres with volumes larger than \( 3 \; \times \; 10^{4}\; \unicode{xC5}^{3} \) or protein complexes with a mass greater than 2.4 MDa.  </p>
+<p>The completeness factor of the invariant:</p>
+$$ \frac{Q'}{Q} $$
+<p>The SAXS curves \( I(q)  \) were calculated by applying CRYSOL which using the following equation </p>
+$$ I(q)=\left\langle \left|A_{a}(q)-\rho_{s}A_{s}(q)+\delta\rho A_{b}\right|^{2}\right\rangle _{\Omega} $$ 
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+
+<hr/>
+<p><h2> <a name="SAXS profile calculation">Calculation of SAXS profile: </h2></p>
+<p>Calculation of the SAXS profile from atomic coordinates with Debye formula:</p>
+$$I(q)=\sum_{i=1}^{M}\sum_{j=1}^{M}F_{i}\left(q\right)F_{j}\left(q\right)\frac{sin(q\cdot r_{ij})}{q\cdot r_{ij}}$$
+where \( F_{i} \) and \(F_{j} \) are the (atomic) scattering factors of the individual particles (atoms) \( i \) and \( j \), and \( r_{ij} \)
+  is the Euclidean distance between particles \( i \) and \( j \). The summations are overall all of the scattering (atoms) particles \( M \)
+ . The particles could be as small as individual atoms or as large as whole amino acids or amino acids represented as two particles (see <a href="http://dx.doi.org/doi:10.1186/1471-2105-11-429">Svogaard et al. 2010  </a>).</p>
+<p><A href="#FASTLINKS">Jump back to top </A></p>
+
+<hr/>
+<p><h2> <a name="SAXS ab initio structure calculation with spherical harmonics">SAXS ab initio structure calculation with spherical harmonics </h2></p>
+<p><a href="http://dx.doi.org/ "> Stuhrman (1970)</a> introduced the multipole expansion to represent the particle scattering density in spherical coordinates \( (r,\varpi)=(r,\theta,\varphi) \)
+  as the following: </p>
+
+$$\rho\left(\mathbf{r}\right)=\rho_{L}\left(\mathbf{r}\right)=\sum_{l=0}^{L}\sum_{m=-1}^{1}\rho_{lm}\left(\mathbf{r}\right)Y_{lm}\left(\varpi\right)$$
+
+<p> where the spherical harmonics 
+ \( Y_{lm}\left(\varpi\right) \)
+  are combinations of trigomometric functions of orders \( l \) and \( m \).
+ The truncation value \( L \) determine the accuracy of the expansion as the low-order harmonics define the gross structural features of the particle and the higher harmonics describe the finer details. 
+<hr/>
+
+
 
 <p style="margin-left:.9in;text-indent:-.6in"><a href="#FASTLINKS">Back to top </a></p>
 <hr style="border:3px solid #4F1315">

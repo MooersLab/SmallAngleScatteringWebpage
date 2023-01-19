@@ -6,5 +6,4 @@ The rise of SEC-SAXS in the past five years has changed the field.
 I have much to add about SEC-SAXS.
 The current information is still useful for self-study.
 
-Veiw at [https://mooerslab.github.io/SmallAngleScatteringWebpage/](site).
-or at (https://mooerslab.github.io/SmallAngleScatteringWebpage/index.html)
+Veiw at [SmallAngleScatteringWebpage](https://mooerslab.github.io/SmallAngleScatteringWebpage/index.html).

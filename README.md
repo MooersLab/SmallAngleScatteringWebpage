@@ -1,9 +1,12 @@
+![Version](https://img.shields.io/static/v1?label=SmallAngleScatteringWebpage/edit/main/README.md&message=0.1&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 # Biological Small Angle Scattering Webpage
 
 This is a massive rewrite of the popular OU Medicine Small Angle Scattering webpage that no longer became available as of late October 2020.
-The update is staill in progress.
+The update is still in progress.
 The rise of SEC-SAXS in the past five years has changed the field.
 I have much to add about SEC-SAXS.
-The current information is still useful for self-study.
+The current information is still helpful for self-study.
 
 Veiw at [SmallAngleScatteringWebpage](https://mooerslab.github.io/SmallAngleScatteringWebpage/index.html).

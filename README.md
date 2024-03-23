@@ -1,3 +1,7 @@
+![Version](https://img.shields.io/static/v1?label=SmallAngleScatteringWebpage&message=0.1&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 # Biological Small Angle Scattering Webpage
 
 This is a massive rewrite of the popular OU Medicine Small Angle Scattering webpage that no longer became available as of late October 2020.
